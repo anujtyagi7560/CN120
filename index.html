@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav id="navbar" class="hidden">
+        <ul type="none">
+            <li><img id="logo" src="croppedlogo.png" width="50px" height="10px" alt=""></li>
+            <li><a href="#info">Health index</a></li>
+            <li><a href="#journals">Health Journals</a></li>
+            <li><a href="#calorycounter">Calorie Counter</a></li>
+            <li><a href="">Personalize your schedule</a></li>
+            <li><a href="#todolist">Todo List</a></li>
+        </ul>
+    </nav>
+    <div id="cotainer">
+        <br>
+
+        <div id="info">
+            <div id="blurimg"></div>
+            <h1>Health and Wellness Tracker</h1>
+            <h2>Fitness Goals</h2>
+            <label>Enter weight: </label>
+            <input id="weigth" type="number" min="0" placeholder="Enter weight">
+            <label>Enter hours of sleep</label>
+            <input id="hours" type="number" min="0" placeholder="Enter hours of sleep">
+            <label>Enter calories consumed</label>
+            <input id="calories" type="number" min="0" placeholder="Enter cal per day">
+            <label>Enter km runned</label>
+            <input id="runned" type="number" min="0" placeholder="Enter km">
+            <button id="calculate">Calculate Health index</button>
+            <div id="show"></div>
+        </div>
+        <br>
+        <div id="journals">
+            <br>
+            <h1>SOME JOURNALS </h1>
+            <p>Yoga Is Self-Realization — The aim of Yoga is self-realization to fully experience or “realize” one’s
+                true nature. The Waves of Mental Activity Are like Curtains Which Hide Our True Nature</p>
+            <h2>Exercise & Fitness</h2>
+            <p>Exercising regularly, every day if possible, is the single most important thing you can do for your
+                health. In the short term, exercise helps to control appetite, boost mood, and improve sleep. In the
+                long term, it reduces the risk of heart disease, stroke, diabetes, dementia, depression, and many
+                cancers.</p>
+            <h3>Two workout strategies that reduce cardiovascular disease risk</h3>
+            <img src="https://domf5oio6qrcr.cloudfront.net/medialibrary/15042/8acb5578-6ac9-4b73-8a37-f3f608a97a03.jpg"
+                alt="">
+            <p>Doing regular aerobic exercise — the kind that works your heart and lungs — is one of the best ways to
+                reduce your risk of cardiovascular disease. Now, findings published online Jan. 17, 2024, by the
+                European Heart Journal suggest that doing a combination of aerobics and strength training might reduce
+                cardiovascular risk factors just as effectively. The study involved about 400 people (ages 35 to 70)
+                classified as overweight or obese who also had high blood pressure. They were randomly assigned to one
+                of four exercise programs: a 60-minute aerobic workout three times a week, a 60-minute strength training
+                workout three times a week, a 60-minute combination of aerobics and strength training (30 minutes of
+                each) three times a week, or no exercise at all. After one year, people in both the aerobics-only group
+                and the combination exercise group (but not the strength-training-only group) had a significant
+                reduction in a combined measure of cardiovascular risk factors, compared with people who didn't
+                exercise. These risk factors included blood pressure, LDL (bad) cholesterol, blood sugar, and body fat.
+                People doing the combined workouts also improved their muscle strength. What this means: it might be
+                equally healthful to replace half of your aerobic workout with strength training, without adding
+                additional exercise time.</p>
+            <h3>An easier way to do high-intensity interval training</h3>
+            <img src="https://domf5oio6qrcr.cloudfront.net/medialibrary/15048/c7aeb8db-de4d-45f6-88c0-edd90a7c5fbe.jpg"
+                alt="">
+            <p>By now, you're probably familiar with high-intensity interval training (HIIT), a popular workout strategy
+                that alternates bursts of strenuous exercise with rest or lower-intensity activity. The technique helps
+                you get fit faster than a traditional moderate-intensity workout. HIIT also produces equal or greater
+                improvements in blood pressure, blood sugar, weight loss, and functional ability (such as walking
+                quickly or getting out of a chair), compared with moderate-intensity exercise.
+
+                But what if you have an old sports injury, a chronic disease, or a sedentary lifestyle that makes HIIT
+                seem too challenging? The answer might be to perform the powerhouse workout in a pool.</p>
+            <h4>Aquatic HIIT</h4>
+            <p>An analysis of 18 studies published online Nov. 14, 2023, by BMJ Open Sport & Exercise Medicine found
+                that people with chronic conditions who took part in high-intensity interval training in the water —
+                called aquatic HIIT or AHIIT — experienced a similar boost in endurance (their maximum sustained
+                physical exertion) as people who took part in land-based HIIT.
+
+                Almost 900 people were involved in the studies. Conditions among participants included arthritis, low
+                back pain, lung or heart problems, peripheral artery disease, diabetes, obesity, a history of stroke,
+                and spinal cord injury.</p>
+            <h2>Stepping up activity if winter slowed you down</h2>
+            <img src="http://content.health.harvard.edu/wp-content/uploads/2024/03/96cf6052-83ba-4116-88bf-767390a5a2e2.jpg"
+                alt="">
+            <p>If you've been cocooning due to winter's cold, who can blame you? But a lack of activity isn't good for
+                body or mind during any season. And whether you're deep in the grip of winter or fortunate to be basking
+                in signs of spring, today is a good day to start exercising. If you're not sure where to start — or why
+                you should — we've shared tips and answers below.</p>
+            <h4>Moving more: What's in it for all of us?</h4>
+            <p>We're all supposed to strengthen our muscles at least twice a week and get a total at least 150 minutes
+                of weekly aerobic activity (the kind that gets your heart and lungs working). But fewer than 18% of U.S.
+                adults meet those weekly recommendations, according to the CDC.</p>
+            <div id="video-div">
+                <video width="640" height="360" controls>
+                    <source src="vedio1.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div id="calorycounter">
+            <h1><span id="h1">Calorie Counter</span></h1>
+            <div class="container">
+                <form id="calorie-counter">
+                    <label for="budget">Budget</label>
+                    <input type="number" min="0" id="budget" placeholder="Daily calorie budget" required />
+                    <fieldset id="breakfast">
+                        <legend>Breakfast</legend>
+                        <div class="input-container"></div>
+                    </fieldset>
+                    <fieldset id="lunch">
+                        <legend>Lunch</legend>
+                        <div class="input-container"></div>
+                    </fieldset>
+                    <fieldset id="dinner">
+                        <legend>Dinner</legend>
+                        <div class="input-container"></div>
+                    </fieldset>
+                    <fieldset id="snacks">
+                        <legend>Snacks</legend>
+                        <div class="input-container"></div>
+                    </fieldset>
+                    <fieldset id="exercise">
+                        <legend>Exercise</legend>
+                        <div class="input-container"></div>
+                    </fieldset>
+                    <div class="controls">
+                        <span>
+                            <label for="entry-dropdown">Add food or exercise:</label>
+                            <select id="entry-dropdown" name="options">
+                                <option value="breakfast" selected>Breakfast</option>
+                                <option value="lunch">Lunch</option>
+                                <option value="dinner">Dinner</option>
+                                <option value="snacks">Snacks</option>
+                                <option value="exercise">Exercise</option>
+                            </select>
+                            <button type="button" id="add-entry">Add Entry</button>
+                        </span>
+                    </div>
+                    <div>
+                        <button type="submit">
+                            Calculate Remaining Calories
+                        </button>
+                        <button type="button" id="clear">Clear</button>
+                    </div>
+                </form>
+                <div id="output" class="output hide"></div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="todolist">
+        <h1>Todo List</h1>
+        <div class="todo-app">
+            <button id="open-task-form-btn" class="btn large-btn">
+                Add New Task
+            </button>
+            <form class="task-form hidden" id="task-form">
+                <div class="task-form-header">
+                    <button id="close-task-form-btn" class="close-task-form-btn" type="button" aria-label="close">
+                        <svg class="close-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px"
+                            height="48px">
+                            <path fill="#F44336" d="M21.5 4.5H26.501V43.5H21.5z" transform="rotate(45.001 24 24)" />
+                            <path fill="#F44336" d="M21.5 4.5H26.5V43.501H21.5z" transform="rotate(135.008 24 24)" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="task-form-body">
+                    <label class="task-form-label" for="title-input">Title</label>
+                    <input required type="text" class="form-control" id="title-input" value="" />
+                    <label class="task-form-label" for="date-input">Date</label>
+                    <input type="date" class="form-control" id="date-input" value="" />
+                    <label class="task-form-label" for="description-input">Description</label>
+                    <textarea class="form-control" id="description-input" cols="30" rows="5"></textarea>
+                </div>
+                <div class="task-form-footer">
+                    <button id="add-or-update-task-btn" class="btn large-btn" type="submit">
+                        Add Task
+                    </button>
+                </div>
+            </form>
+            <dialog id="confirm-close-dialog">
+                <form method="dialog">
+                    <p class="discard-message-text">Discard unsaved changes?</p>
+                    <div class="confirm-close-dialog-btn-container">
+                        <button id="cancel-btn" class="btn">
+                            Cancel
+                        </button>
+                        <button id="discard-btn" class="btn">
+                            Discard
+                        </button>
+                    </div>
+                </form>
+            </dialog>
+            <div id="tasks-container"></div>
+        </div>
+    </div>
+    <div id="footer">
+        <footer>
+            
+        </footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
